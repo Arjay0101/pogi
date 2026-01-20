@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="container">
+<video src="ssstik.io_@chososweak_1768909923690.mp4" autoplay loop></video>
+<button onclick="goBack()">Go Back</button>
+</div>
+
+</body>
+</html>
+
+<style>
+
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 96vh;
+    background-color: lightgray;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  video{
+    margin: auto;
+    border-style: solid;
+    border-radius: 10px;
+    width: 80%;
+  }
+
+  button{
+    width: 30%;
+    margin: auto;
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: solid;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  button:hover{
+    background-color: rgb(199, 194, 194);
+  }
+
+  button:active{
+    background-color: rgb(171, 163, 163);
+  }
+</style>
+
+<script>
+  function goBack(){
+    window.location.href = "practice3.html";
+  }
+</script>

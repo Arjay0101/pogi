@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="container">
+    <h1>Pogi ba ako?</h1>
+    <button id="yes" onclick="yes()">Oo</button>
+    <button id="no" onclick="no()">Hinde</button>
+
+  </div>
+</body>
+</html>
+
+<style>
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 98vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    background-color: rgb(167, 167, 167);
+  }
+  
+  #container{
+    width: 250px;
+    height: 270px;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-width: 1.4px;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  h1{
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  button{
+    width: 40%;
+    margin: 5px;
+    height: 35px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1.4px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  button:hover{
+    background-color: rgb(197, 191, 191);
+  }
+  button:active{
+    background-color: rgb(167, 161, 161);
+  }
+
+  #no{
+    position: absolute;
+    right: 10px;
+  }
+
+  #yes{
+    margin-right: 50%;
+  }
+
+</style>
+
+<script>
+
+  function yes(){
+    window.location.href = "practice4.html";
+  }
+
+ let count = 0;
+
+function no() {
+  count++;
+
+  let no = document.getElementById("no");
+
+  
+  no.style.top = "";
+  no.style.bottom = "";
+
+  if (count % 4 === 1) {
+    no.style.top = "80px";
+  }
+  else if (count % 4 === 2) {
+    no.style.bottom = "50px";
+  }
+  else if (count % 4 === 3) {
+    no.style.top = "100px";
+  }
+  else {
+    no.style.bottom = "88px";
+  }
+}
+
+
+    
+  
+
+</script>
